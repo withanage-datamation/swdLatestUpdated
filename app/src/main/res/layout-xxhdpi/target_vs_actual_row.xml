@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:weightSum="3.5"
+    android:background="#f7f7f7">
+    <TextView
+        android:id="@+id/brandCode"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sub Brand Code"
+        android:textAllCaps="true"
+        android:gravity="center"
+    />
+
+    <TextView
+        android:id="@+id/brandName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sub Brand Name"
+        android:gravity="center"
+        android:textAllCaps="true"
+       />
+
+    <TextView
+        android:id="@+id/target"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Target"
+        android:gravity="center"
+        android:textAllCaps="true"
+      />
+
+    <TextView
+        android:id="@+id/achievement"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Achievement"
+        android:gravity="center"
+        android:textAllCaps="true"
+      />
+
+    <TextView
+        android:id="@+id/precentage"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="%"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_marginLeft="10dp"
+         />
+
+
+</LinearLayout>

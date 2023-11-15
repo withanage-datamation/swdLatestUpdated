@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_bg"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:weightSum="1"
+        android:layout_marginTop="20sp">
+
+        <com.datamation.swdsfa.utils.CustomFont
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.24"
+            android:gravity="center|left"
+            android:text="Target Item"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spTargetItem"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.76"
+            android:layout_marginLeft="5dp"
+            android:layout_margin="2dp"
+            android:textAlignment="center"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:background="@drawable/edittextstyle_black"
+            android:textColor="#000"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:weightSum="1">
+
+        <com.datamation.swdsfa.utils.CustomFont
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="Target Item Name" />
+
+        <com.datamation.swdsfa.utils.CustomFont
+            android:id="@+id/targetItemName"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.75"
+            android:layout_margin="2dp"
+            android:paddingLeft="5dp"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:background="@drawable/edittextstyle_black"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:weightSum="3">
+
+        <com.datamation.swdsfa.utils.CustomFont
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="Date From" />
+
+        <ImageView
+            android:id="@+id/image_view_date_select_from"
+            android:layout_width="41dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/calendar_report" />
+
+        <com.datamation.swdsfa.utils.CustomFont
+            android:id="@+id/fromDate"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.75"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/edittextstyle_black"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+
+        <com.datamation.swdsfa.utils.CustomFont
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Date To" />
+
+        <ImageView
+            android:id="@+id/image_view_date_select_to"
+            android:layout_width="41dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/calendar_report" />
+
+        <com.datamation.swdsfa.utils.CustomFont
+            android:id="@+id/toDate"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.75"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/edittextstyle_black"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:weightSum="1"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup
+            android:id="@+id/groupradio"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp" >
+
+        <RadioButton
+            android:id="@+id/rdSalesOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Sales Order"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:buttonTint="@color/half_black"/>
+
+
+        <RadioButton
+            android:id="@+id/rdInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Invoice"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:buttonTint="@color/half_black"/>
+
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:weightSum="2">
+
+        <RadioGroup
+            android:id="@+id/groupradioCategory"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp" >
+
+        <RadioButton
+            android:id="@+id/rdCase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Cases"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:buttonTint="@color/half_black"/>
+
+
+        <RadioButton
+            android:id="@+id/rdPieces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Pieces"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:buttonTint="@color/half_black"/>
+
+        <RadioButton
+            android:id="@+id/rdTonnage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Tonnage"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:buttonTint="@color/half_black"/>
+
+        <RadioButton
+            android:id="@+id/rdValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Value"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:buttonTint="@color/half_black"/>
+
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="3dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.datamation.swdsfa.utils.CustomBtn
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="DONE"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_button_blue"
+            android:visibility="invisible"/>
+
+        <com.datamation.swdsfa.utils.CustomBtn
+            android:id="@+id/btnDone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="DONE"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_button_blue"/>
+
+        <com.datamation.swdsfa.utils.CustomBtn
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="DONE"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_button_blue"
+            android:visibility="invisible"/>
+
+
+    </TableRow>
+
+
+<!--    <com.datamation.cjsfa.utils.CustomBtn-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/close"-->
+<!--        android:background="@drawable/bottom_button_bg_half"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="#fff"-->
+<!--        android:text="OK" />-->
+
+
+</LinearLayout>
